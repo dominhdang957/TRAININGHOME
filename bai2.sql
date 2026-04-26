@@ -55,5 +55,3 @@ insert into custommer(full_name, email, phone) values
 ('Ngoc Phuc', 'ngocphuc@gmail.com', '0912345678');
 
 -- Câu lệnh trên bị lỗi vì cột email được khởi tạo trước đó trùng với email bạn đang thêm vì đã có Ràng buộc UNIQUE nên không thể trùng lặp email.
-
-
