@@ -54,6 +54,22 @@ VALUES
 insert into custommer(full_name, email, phone) values
 ('Ngoc Phuc', 'ngocphuc@gmail.com', '0912345678');
 
+SELECT *
+FROM Books
+WHERE category = 'Trinh thám'
+AND price < 100000;
+
+SELECT *
+FROM Customers
+WHERE email LIKE '%@gmail.com';
+SELECT *
+FROM Books
+ORDER BY price DESC
+LIMIT 3;
+UPDATE Books
+SET price = price * 0.9
+WHERE pub_year < 2020;
+
 -- Câu lệnh trên bị lỗi vì cột email được khởi tạo trước đó trùng với email bạn đang thêm vì đã có Ràng buộc UNIQUE nên không thể trùng lặp email.
 
 
